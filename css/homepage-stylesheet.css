@@ -8,10 +8,6 @@ header .pfp{
     margin: 0 auto;
 }
 
-#grad {
-  background-image: linear-gradient(red, yellow);
-}
-
 header h1{
     font-family:'Courier New', Courier, monospace;
     font-size: medium;
@@ -24,4 +20,24 @@ header h2{
     font-size: medium;
     text-align: center;
     margin: -23px 0 5px 250px;
+}
+
+main{
+    padding-top: 2.5%;
+}
+
+main .Photo-1{
+    width: 250px;
+    height: auto;
+    margin: 26px 0px 0px 170px;
+}
+main .Photo-2{
+    width: 250px;
+    height: auto;
+    margin: 26px 0px 0px 10px;
+}
+main .Photo-3{
+    width: 250px;
+    height: auto;
+    margin: 26px 0px 0px 10px;
 }
