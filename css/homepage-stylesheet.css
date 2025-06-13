@@ -1,0 +1,27 @@
+header .pfp{
+    width: 400px;
+    height: 200px;
+    background-image: url('./../img/Website-logo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+#grad {
+  background-image: linear-gradient(red, yellow);
+}
+
+header h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size: medium;
+    text-align: center;
+    margin: -20px 0 5px -250px;
+}
+
+header h2{
+    font-family:'Courier New', Courier, monospace;
+    font-size: medium;
+    text-align: center;
+    margin: -23px 0 5px 250px;
+}
