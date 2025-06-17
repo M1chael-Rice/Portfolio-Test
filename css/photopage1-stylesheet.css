@@ -1,4 +1,3 @@
-
 header .pfp{
     width: 400px;
     height: 200px;
@@ -49,7 +48,5 @@ main {
   max-width: 1200px;
   max-height: 400px;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   flex: 0 1 auto;
 }
