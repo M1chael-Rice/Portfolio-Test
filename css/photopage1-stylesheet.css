@@ -24,11 +24,10 @@ header h2{
 
 main {
   margin: auto;
-  padding: 50px;
+  padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 .Image-block {
@@ -48,5 +47,5 @@ main {
   max-width: 1200px;
   max-height: 400px;
   height: auto;
-  flex: 0 1 auto;
+  object-fit: cover;
 }
