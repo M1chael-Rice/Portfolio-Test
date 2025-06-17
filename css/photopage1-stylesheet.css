@@ -27,25 +27,43 @@ main {
   padding: 40px;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.Image-block {
-  width: auto;
-  max-width: 1200px;
 }
 
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  max-width: 1200px;
+  width: 100%;
 }
 
-.gallery img {
-  width: auto;
-  max-width: 1200px;
-  max-height: 400px;
-  height: auto;
-  object-fit: cover;
-}
+.gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+.landscape {
+      grid-column: span 2;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .landscape {
+        grid-column: span 2;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .landscape {
+        grid-column: span 1;
+      }
+    }
