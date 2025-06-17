@@ -22,22 +22,33 @@ header h2{
     margin: -23px 0 5px 250px;
 }
 
-main{
-    padding-top: 2.5%;
+main {
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-main .Photo-1{
-    width: 250px;
-    height: auto;
-    margin: 26px 0px 0px 170px;
+.Image-block {
+  width: auto;
+  max-width: 1200px;
 }
-main .Photo-2{
-    width: 250px;
-    height: auto;
-    margin: 26px 0px 0px 10px;
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
-main .Photo-3{
-    width: 250px;
-    height: auto;
-    margin: 26px 0px 0px 10px;
+
+.gallery img {
+  width: auto;
+  max-width: 1200px;
+  max-height: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  flex: 0 1 auto;
 }
