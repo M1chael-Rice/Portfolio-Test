@@ -167,6 +167,21 @@ main {
   margin-right: 10px;
 }
 
+@media (max-width: 600px) {
+    .lightbox-nav {
+        top: auto;
+        bottom: 20px;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .lightbox-nav .prev,
+    .lightbox-nav .next {
+        font-size: 24px;
+        opacity: 25%;
+    }
+}
+
 /* Full-width header container with shadow */
 .site-footer-shadow {
   width: 100%;

@@ -74,68 +74,6 @@ header .pfp{
   }
 }
 
-/* header h1{
-    font-family:'Courier New', Courier, monospace;
-    font-size: medium;
-    text-align: center;
-    margin: -20px 0 5px -250px;
-}
-
-header h2{
-    font-family:'Courier New', Courier, monospace;
-    font-size: medium;
-    text-align: center;
-    margin: -23px 0 5px 250px;
-}
-
-@media (max-width: 600px) {
-    .header h1
-    .header h2 {
-        flex-direction: column;
-    align-items: center;
-    }
-
-    .header h1,
-    .header h2 {
-    text-align: center;
-    flex: none;
-  }
-} */
-
-
-        
-
-/* main {
-  margin: auto;
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.Image-block {
-  width: auto;
-  max-width: 1200px;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.gallery img {
-  width: auto;
-  max-width: 1200px;
-  max-height: 400px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  flex: 0 1 auto;
-} */
-
 main {
   margin: auto;
   padding: 40px;
