@@ -1,3 +1,29 @@
+
+/* Full-width header container with shadow */
+.site-header-shadow {
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  position: relative;
+  z-index: 10;
+}
+
+/* Inner container for centered layout */
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header .pfp{
     width: 400px;
     height: 200px;
@@ -24,15 +50,15 @@ header h2{
 
 main {
   margin: auto;
-  padding: 40px;
+  padding: 30px;
   display: flex;
   justify-content: center;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: .75rem;
   max-width: 1200px;
   width: 100%;
 }
@@ -48,15 +74,15 @@ main {
       grid-column: span 2;
     }
 
-    /* @media (max-width: 600px) {
+    @media (max-width: 600px) {
       .gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
       }
 
       .landscape {
-        grid-column: span 1;
+        grid-column: span 2;
       }
-    } */
+    }
 
     /* Lightbox modal styles */
 .lightbox-modal {

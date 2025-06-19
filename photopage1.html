@@ -7,7 +7,7 @@
     <link rel="icon" href="./img/Photo 1.jpg">
     <link rel="stylesheet" href="./css/photopage1-stylesheet.css">
 </head>
-<!-- hyperlink rules -->
+
 <style> 
 
 a:link {
@@ -34,19 +34,23 @@ a:active {
 </style>
 
 <header>
-    <a href="index.html">
-        <div class="pfp"></div>
-    </a>
-    <h1><a href="https://www.instagram.com/michaelricephotography/" target="_blank">Visit my Instagram</a></h1> 
-    <h2>Drop me an email</h2>
-    <div id="grad1"></div>
 
-    <!-- <style>
-    #grad1 {
-  height: 10px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255,0,0,0));
-}
-</style> -->
+ <header class="site-header-shadow">
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <div class="pfp" aria-label="Home"></div>
+    </a>
+
+  <div class="header-text">
+    <h1>
+      <a href="https://www.instagram.com/michaelricephotography/" target="_blank" rel="noopener noreferrer">
+        Visit my Instagram
+      </a>
+    </h1>
+    <h2>Drop me an email</h2>
+  </div>
+
+  <div id="grad1" aria-hidden="true"></div>
 
 </header>
 
@@ -76,6 +80,7 @@ a:active {
         <div class="gallery-item"><img src="./../Portfolio-Test/img/photopage1/DSCF0462.jpg" alt=""></div>
         <div class="gallery-item landscape"><img src="./../Portfolio-Test/img/photopage1/DSCF0589.jpg" alt=""></div>
         <div class="gallery-item"><img src="./../Portfolio-Test/img/photopage1/DSCF8113.jpg" alt=""></div>
+        <div class="gallery-item"><img src="./../Portfolio-Test/img/photopage1/DSCF0043.jpg" alt=""></div>
     </div>
 
     <div class="lightbox-modal" id="lightboxModal">
@@ -96,18 +101,22 @@ a:active {
   const nextBtn = document.getElementById("nextBtn");
   const galleryImages = document.querySelectorAll(".gallery-item img");
 
+//   this shows which image is being shown - currently it's the first image.
   let currentIndex = 0;
 
+//   Sets which image is shown. Makes it visible & sets it to what was clicked.
   function openModal(index) {
     currentIndex = index;
     modal.style.display = "flex";
     modalImg.src = galleryImages[currentIndex].src;
   }
 
+// When clicked off the modal, it's hidden again.
   function closeModal() {
     modal.style.display = "none";
   }
 
+//   The % makes it loop from the last iamge to the first.
   function showNext() {
     currentIndex = (currentIndex + 1) % galleryImages.length;
     modalImg.src = galleryImages[currentIndex].src;
