@@ -26,7 +26,7 @@ body {
 
 header .pfp{
     width: 400px;
-    height: 200px;
+    height: 125px;
     background-image: url('./../img/Website-logo.png');
     background-repeat: no-repeat;
     background-position: center center;
@@ -34,7 +34,47 @@ header .pfp{
     margin: 0 auto;
 }
 
-header h1{
+.header-titles {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; /* controls space between h1 and h2 */
+    text-align: center;
+    padding-top: -10px;
+}
+
+.header-titles h1,
+.header-titles h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.header-titles h1 {
+    text-align: left;
+}
+
+.header-titles h2 {
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    .header-titles {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 0px;
+        font-size: small;
+    }
+
+    .header-titles h1,
+  .header-titles h2 {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* header h1{
     font-family:'Courier New', Courier, monospace;
     font-size: medium;
     text-align: center;
@@ -47,6 +87,23 @@ header h2{
     text-align: center;
     margin: -23px 0 5px 250px;
 }
+
+@media (max-width: 600px) {
+    .header h1
+    .header h2 {
+        flex-direction: column;
+    align-items: center;
+    }
+
+    .header h1,
+    .header h2 {
+    text-align: center;
+    flex: none;
+  }
+} */
+
+
+        
 
 /* main {
   margin: auto;
